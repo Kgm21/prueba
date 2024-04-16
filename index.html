@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#" method="post">
+        <!-- input y labels -->
+        <label for="nombre">Nombre :</label>
+        <input class="estiloInput" type="text" id="nombre" placeholder="Escriba aqui su nombre" required>
+        <br>
+        <label for="apellido">Apellido :</label>
+        <input class="estiloInput" type="text" name="apellido" id="apellido" maxlength="20" minlength="5" required>
+        <br>
+        <label for="direccion">Direccion :</label>
+        <input class="estiloInput" type="text" name="direccion" id="direccion" required>
+        <br>
+        <label for="altura">Altura:</label>
+        <input class="estiloInput" type="number" name="altura" id="altura" required max="1000" min="1">
+        <br>
+        <label for="mail">E-mail:</label>
+        <input class="estiloInput" type="email" name="mail" id="mail" disabled value="minombre@mail.com" required>
+        <br>
+        <label for="password">Password:</label>
+        <input class="estiloInput" type="password" name="password" id="password" required>
+        <hr>
+        <label for="fecha"></label>
+        <input type="date" id="fecha">
+        <hr>
+        <input type="file" >
+        <hr>
+        <input type="range">
+        <hr>
+        <h2>Checkbox</h2>
+        <input type="checkbox" name="marca" value="1"> fiat
+        <input type="checkbox" name="marca" value="2"> ford
+        <input type="checkbox" name="marca" value="3"> renault
+        <hr>
+        <h2>Radio Button</h2>
+        <input type="radio" name="marca" value="1"> fiat
+        <input type="radio" name="marca" value="2"> ford
+        <input type="radio" name="marca" value="3"> renault
+        <hr>
+        <fieldset>
+            <legend>Datos del alumno</legend>
+            <label for="direccion">Direccion</label>
+            <input type="text" class="estiloInput" id="direccion" name="direccion">
+        </fieldset>
+        <hr>
+        <label for="comentario">comentario:</label>
+        <textarea name="" id="comentario" cols="40" rows="10"></textarea>
+        
+        <hr>
+
+        <h3>Provincias </h3>
+        <select >
+            <option value="1" >Cordoba</option>
+            <option value="2">Mendoza</option>
+            <option value="3">Santa Fe</option>
+        </select>
+
+        <h3>Autos </h3>
+
+        <select name="" id="">
+            <optgroup label="nacionales">
+                <option value="">Ford</option>
+                <option value="">fiat</option>
+            </optgroup>
+            <optgroup label="importados">
+                <option value="">BMW</option>
+                <OPtion>Mercedes</OPtion>
+            </optgroup>
+        </select>
+
+
+        <input type="submit" value="Enviar">
+        
+        <!-- los input los puedo ordenar en una tabla -->
+        <table>
+            <tr><td></td><td></td></tr>
+        </table>
+        <!-- tiene que tener un submit -->
+    </form>
+</body>
+</html>
